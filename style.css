@@ -1,20 +1,83 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(155, 182, 240);
 }
-form{
+.dictionary-section{
     display: flex;
     flex-direction: column;
 text-align: center;
 margin-top: 40px;
 
 }
-form .part1 input{
+.dictionary-section .part1 input{
     padding: 10px 15px;
     border-radius: 5px;
     margin: 20px 5px;
+    background-color: white;
 }
-form .part1 input[type=submit]{
+.dictionary-section .part1 input[type=submit]{
  background-color: rgb(88, 88, 190);
  color:white;
+}
+.user-todo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.todo-form{
+border: 1px solid black;
+box-shadow: 2px 2px 2px 1px gray;
+width: fit-content;
+padding: 20px;
+border-radius: 15px;
+
+}
+.todo-form .form-part1{
+    color: rgb(88, 88, 190);   
+    display: flex;
+    justify-content: space-between;
+}
+.form-part2{
+    margin-top: 4vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.todo-form .form-part2 input{
+    
+    padding: 23px 0px 6px 10px;
+    /* padding-bottom: 6px; */
+    border-radius: 15px;
+    width: 400px;
+    height:21px;
+    border: none;
+}
+.form-part2 button{
+border-radius: 15px;
+padding:4px 2px;
+width: 80px;
+background-color: rgb(29, 3, 47);
+color: white;
+}
+
+.todo-form ul{
+    margin: 20px 0px;
+  
+}
+.todo-form ul li{
+    list-style: none;
+    margin: 3px;
+    background-color: rgb(81, 81, 199);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.todo-form ul li i{
+    border: none;
+    color: black;
+    background-color:rgb(81, 81, 199);
 }

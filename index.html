@@ -5,18 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+       <script
+      src="https://kit.fontawesome.com/ba7a9ec303.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
-    <form onsubmit="magic(event,this.querySelector('input[type=text]').value)">
+    <form class="dictionary-section" onsubmit="magic(event,this.querySelector('input[type=text]').value)">
     <h1>Search for your words Meaning</h1>
     <div class="part1"><input type="text" />
     <input type="submit" value="submit"/></div>
      <div class="part2">
         <h1>Meaning:</h1>
-     <p id="outputArea" style="font-size: 27px; color:red;"></p>
+     <p id="outputArea" style="font-size: 27px; color:rgb(243, 235, 235);"></p>
      </div>
     </form>
-   
+    <section class="user-todo">
+   <form class="todo-form" >
+      <div class="form-part1">
+        <h1>To-Do List</h1>
+        <i class="fa-solid fa-list" style="padding-top: 5px;"></i>
+      </div>
+      <div class="form-part2">
+        <div><input type="text"  id="inputtext"
+            placeholder="Add to your todo list"/>
+        <button onclick="todos(event)">Add <br/>Task</button></div>
+        
+      </div>
+      <ul id="todolist">
+
+        </ul>
+</section>
+
+   </form>
     <script src="./script.js"></script>
 </body>
 </html>
